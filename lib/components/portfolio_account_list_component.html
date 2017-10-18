@@ -1,0 +1,21 @@
+<h1>PortfolioAccounts ({{ models.length }})</h1>
+<table>
+  <thead>
+    <tr>
+      <th>AccountType</th>
+      <th>Descr</th>
+      <th>Owner</th>
+      <th>HoldingMap</th>
+      <th>OtherHoldings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let model of models;" [routerLink]="['/PortfolioAccount/Detail', { id: model.id }]">
+      <td>{{model.accountType}}</td>
+      <td>{{model.descr}}</td>
+      <td>{{model.owner}}</td>
+      <td>{{model.holdingMap}}</td>
+      <td>{{model.otherHoldings}}</td>
+   </tr>
+  </tbody>
+</table>

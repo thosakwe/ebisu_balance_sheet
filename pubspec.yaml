@@ -1,0 +1,30 @@
+name: balance_sheet
+version: 0.0.1
+environment:
+  sdk: '>=1.8.2 <2.0.0'
+
+dependencies:
+  angular2: "2.0.0-beta.17"
+  browser: "^0.10.0"
+
+# custom <balance_sheet dependencies>
+# end <balance_sheet dependencies>
+
+dev_dependencies:
+
+# custom <balance_sheet dev dependencies>
+# end <balance_sheet dev dependencies>
+
+dependency_overrides:
+# custom <balance_sheet dependency overrides>
+# end <balance_sheet dependency overrides>
+
+transformers:
+- angular2:
+    entry_points:
+      - web/main.dart
+
+
+# custom <balance_sheet transformers>
+# end <balance_sheet transformers>
+
